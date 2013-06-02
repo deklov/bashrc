@@ -1,5 +1,5 @@
 if [[ $- != *i* ]] ; then
-	# Non-interactive, do nothing
+	# Non-interactive shell, do nothing
 	return
 fi
 
@@ -14,5 +14,8 @@ function source_if {
 source_if "~/.bash_aliases"
 source_if "~/.bash_variables"
 
-keychain ~/.ssh/id_dsa 2>/dev/null
-source ~/.keychain/localhost-sh
+# Setup keychain, if the keychain executable is in $PATH
+if [ "x$(which keychain 2>/dev/null)" != "x" ]; then
+    keychain ~/.ssh/id_dsa 2>/dev/null
+    source ~/.keychain/localhost-sh
+fi
