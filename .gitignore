@@ -2,5 +2,6 @@
 !.gitignore
 !.bashrc
 !.bash_aliases
+!.bash_variables
 !.gitconfig
 
