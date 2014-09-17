@@ -13,6 +13,8 @@ function source_if {
 source_if "$HOME/.bash_aliases"
 source_if "$HOME/.bash_variables"
 
+source_if "/usr/share/git/completion/git-completion.bash"
+
 # Setup keychain, if the keychain executable is in $PATH
 if [ "x$(which keychain 2>/dev/null)" != "x" ]; then
     keychain ~/.ssh/id_dsa 2>/dev/null
