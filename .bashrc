@@ -10,6 +10,7 @@ function source_if {
     fi
 }
 
+source_if "$HOME/.bash_local"
 source_if "$HOME/.bash_aliases"
 source_if "$HOME/.bash_variables"
 
