@@ -17,3 +17,6 @@ set scrolloff=4
 set wildmode=longest,list
 
 map <F5> {!}fmt --width=80
+
+set statusline=%f%=%l,%c\ %P
+set laststatus=2
