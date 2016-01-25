@@ -22,4 +22,6 @@ if [ "x$(which keychain 2>/dev/null)" != "x" ]; then
     source ~/.keychain/localhost-sh
 fi
 
+# Remap ctrl to caps-lock
+setxkbmap -option ctrl:nocaps
 
