@@ -1,0 +1,23 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+general {
+        colors = true
+        interval = 5
+}
+
+order += "battery 0"
+order += "tztime local"
+
+battery 0 {
+        format = "%percentage"
+}
+
+run_watch DHCP {
+        pidfile = "/var/run/dhcpcd-*.pid"
+}
+
+tztime local {
+        format = "%Y-%m-%d %H:%M:%S"
+}
+

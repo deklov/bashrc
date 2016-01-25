@@ -6,3 +6,6 @@
 !.gitconfig
 !.vimrc
 !.Xresources
+!.i3
+!.i3/config
+!.i3/status
